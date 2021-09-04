@@ -1,0 +1,70 @@
+\documentclass{prometheus_cv}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={5.3in, 10in}, top=2cm]{geometry}
+
+\usepackage{xcolor}
+\definecolor{highlight}{HTML}{283559}
+\definecolor{highlight2}{HTML}{1A2640}
+\definecolor{link}{HTML}{5C6273}
+
+\usepackage{lipsum}
+\usepackage{siunitx}
+\usepackage{fontawesome5}
+\usepackage[super]{nth}
+\usepackage[
+	colorlinks = true,
+	linkcolor = highlight,
+	urlcolor = highlight,
+	citecolor= highlight
+]{hyperref}
+
+\usepackage{fontspec}
+
+\setmainfont[
+	BoldFont=Cormorant Garamond Bold,
+	ItalicFont=Cormorant Garamond Italic,
+	BoldItalicFont=Cormorant Garamond Bold Italic
+]{Cormorant Garamond Regular}
+\newfontfamily\GaramondLight{Cormorant Garamond Light}
+
+\newcommand\textlf[1]{{\GaramondLight#1}}
+\newcommand{\highlight}[1]{\textcolor{highlight}{\textbf{#1}}}
+\newcommand{\ec}{\textsuperscript{\textdagger}}
+
+\usepackage{fancyhdr}																		  
+\fancyhf{}
+\rhead{Curriculum Vit\ae}
+\lhead{Carlos Lezama}
+\rfoot{Page \thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{fancy}
+
+\vspace*{-1cm}
+\centering 
+\input{title.tex}
+
+\vspace*{0.4cm}
+
+\section{profile}
+\input{profile}
+
+\section{education}
+\input{education}
+
+\section{employment history}
+\input{employment}
+
+\section{computational skills}
+\input{skills}
+
+\section{languages}
+\input{languages}
+
+\section{relevant courses}
+\input{courses}
+
+\end{document}
