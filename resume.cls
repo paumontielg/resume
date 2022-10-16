@@ -36,7 +36,7 @@
 \def \titlefont {\firstnamefont}
 \def \namefontsize {9.5}
 \def \pathmainfont {fonts/sourcesanspro/}
-\def \mainfont {SourceSansPro-Light}
+\def \mainfont {SourceSansPro-Regular}
 \def \mainfontbold {SourceSansPro-SemiBold}
 \def \mainfontsize {9.5}
 \def \mainsansfont {SourceSansPro-Light}
@@ -112,7 +112,7 @@ Last Updated on \today
 
 % Descriptors command
 \newcommand{\descript}[1]{
-\color{headings}\raggedright\scshape\fontspec[Path = \pathsubheadingfont]{\subheadingfont}\fontsize{\subheadingsize}{12pt}\selectfont \!\! {#1 \\} \normalfont}
+\color{headings}\raggedright\fontspec[Path = \pathsubheadingfont]{\subheadingfont}\fontsize{\subheadingsize}{12pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
 \newcommand{\location}[1]{
