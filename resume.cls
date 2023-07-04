@@ -15,6 +15,7 @@
 \usepackage{graphicx}
 \usepackage{pifont}
 \usepackage[document]{ragged2e}
+\usepackage{fontspec}
 \usepackage{fontawesome}
 
 % Publications
