@@ -1,6 +1,6 @@
 help:
 	@echo "build - build the resume"
-	@echo "clean - remove the resume"
+	@echo "clean - clean up docker images"
 	@echo "image - build the docker image"
 	@echo "shell - run a shell in the docker image"
 	@echo "update - clean, build, and image"
@@ -16,12 +16,10 @@ build:
 	$(RUN) xelatex -interaction=nonstopmode $(IMAGE).tex; git clean -Xdf
 
 clean:
-	rm -f $(IMAGE).pdf
+	docker image prune -f
 
 image:
 	docker build -t $(IMAGE) .
 
 shell:
 	$(RUN) /bin/bash
-
-update: clean image build
