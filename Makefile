@@ -19,7 +19,7 @@ clean:
 	rm -f $(IMAGE).pdf
 
 image:
-	docker build --no-cache -t $(IMAGE) .
+	docker build -t $(IMAGE) .
 
 shell:
 	$(RUN) /bin/bash
